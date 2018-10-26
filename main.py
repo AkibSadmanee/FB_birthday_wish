@@ -1,5 +1,4 @@
 from selenium import webdriver
-from bs4 import BeautifulSoup
 import os
 import getpass 
   
@@ -13,7 +12,6 @@ print("While entering password nothing may appear on the screen, but be sure to 
 user = input("Enter Your Facebook Login Username, Phone Number or Email:  ")
 password = getpass.getpass(prompt='Enter Your Facebook Login Password:  ') 
 wish="Wish You Many Many Happy Returns of The Day :D"
-
 
 driver=webdriver.Chrome(chrome_path)
 

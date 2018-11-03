@@ -1,6 +1,7 @@
 from selenium import webdriver
 import os
 import getpass 
+import time
   
 if os.name == 'nt':
     chrome_path = r"./chromedriver_win32/chromedriver.exe"
@@ -34,6 +35,7 @@ areas = driver.find_elements_by_tag_name('textarea')
 for area in areas:
     area.send_keys(wish)
     area.submit()
-
+    
+time.sleep(5) 
 driver.quit()
 
